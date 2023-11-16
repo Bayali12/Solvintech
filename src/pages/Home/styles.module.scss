@@ -1,0 +1,39 @@
+.container {
+  max-width: 1280px;
+  padding: 100px 0;
+  margin: 0 auto;
+
+  .usersList {
+    display: flex;
+    justify-content: start;
+    gap: 70px;
+    flex-wrap: wrap;
+    padding-bottom: 102px;
+
+    @media screen and (max-width: 1280px) {
+      justify-content: center !important;
+    }
+  }
+
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    .moreBtn {
+      width: 520px;
+      height: 80px;
+      color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.34);
+      background: #3d7298;
+      box-shadow: 0px 4px 47px 0px rgba(0, 0, 0, 0.25);
+      font-size: 27px;
+      font-weight: 400;
+      font-family: 'Inter', sans-serif;
+
+      &:hover {
+        background-color: darken(#3d7298, 10%);
+      }
+    }
+  }
+}
