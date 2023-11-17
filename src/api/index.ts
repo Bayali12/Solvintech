@@ -5,6 +5,7 @@ const instance = axios.create({
     'Content-Type': 'application/json',
     Accept: '*/*',
   },
+  baseURL: 'https://layout.solvintech.ru/nuxt',
 });
 
 export const usersApi = {

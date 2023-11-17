@@ -25,8 +25,6 @@ export const Home = () => {
     data: users,
   } = useAppSelector((state) => state.users);
 
-  console.log(users);
-
   useEffect(() => {
     dispatch(fetchUsers());
   }, []);
@@ -40,8 +38,6 @@ export const Home = () => {
     dispatch(setCurrentUser(null));
     setIsModalOpen(false);
   };
-
-  console.log(isModalOpen);
 
   return (
     <div className={styles.container}>
