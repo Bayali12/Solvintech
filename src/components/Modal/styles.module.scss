@@ -61,5 +61,5 @@
 }
 
 :global(.exit).modal .content {
-  transform: translateY(-200px);
+  opacity: 0;
 }

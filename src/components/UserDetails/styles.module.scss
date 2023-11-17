@@ -11,7 +11,7 @@
     object-fit: cover;
     object-position: top;
 
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 780px), (max-height: 800px) {
       height: 300px;
     }
     @media screen and (max-width: 440px) {
@@ -28,6 +28,10 @@
     p {
       font-weight: 400;
       font-size: 21px;
+
+      @media screen and (max-width: 780px) {
+        font-size: 16px;
+      }
 
       .title {
         color: #bdbdbd;

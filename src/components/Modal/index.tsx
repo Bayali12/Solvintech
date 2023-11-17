@@ -26,7 +26,7 @@ const Modal = ({ show, onClose, children }: ModalProps) => {
   }, []);
 
   return ReactDOM.createPortal(
-    <CSSTransition in={show} unmountOnExit timeout={{ enter: 0, exit: 300 }}>
+    <CSSTransition in={show} unmountOnExit timeout={{ enter: 300, exit: 0 }}>
       <div className={styles.modal} onClick={onClose}>
         <div className={styles.content} onClick={(e) => e.stopPropagation()}>
           {children}
